@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bogdan L'gotin — backend developer. PHP, Go, Laravel, C++, microservices, systems programming.">
+  <title>Bogdan L'gotin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="header shell">
+    <a href="#" class="header__name" data-i18n="header.name">Bogdan L'gotin</a>
+    <nav class="nav" data-i18n-aria="nav.aria" aria-label="Main navigation">
+      <a href="#work" data-i18n="nav.work">Experience</a>
+      <a href="#pets" data-i18n="nav.pets">Projects</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header__controls">
+      <div class="lang-toggle" role="group" data-i18n-aria="lang.aria" aria-label="Language">
+        <button type="button" class="lang-toggle__btn is-active" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-toggle__btn" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+      <button class="theme-toggle" type="button" data-i18n-aria="theme.aria" aria-label="Toggle theme">◐</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero__left">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Backend developer · llwizard</p>
+        <h1 id="hero-title" class="hero__title">
+          <span class="hero__title-line" data-i18n="hero.name.first">Bogdan</span>
+          <span class="hero__title-line hero__title-line--accent" data-i18n="hero.name.last">L'gotin</span>
+        </h1>
+      </div>
+
+      <div class="hero__right">
+        <p class="hero__intro" data-i18n="hero.intro">
+          I don't just write code — I solve problems that make life and work genuinely easier.
+          I love watching an idea become a product and knowing I made the world a little more convenient.
+        </p>
+        <div class="hero__actions">
+          <a href="#work" class="link-arrow" data-i18n="hero.cta">My experience</a>
+          <a href="https://github.com/llwizard1024" class="link-muted" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section shell" aria-labelledby="work-title">
+      <div class="section__label">
+        <span class="section__num">01</span>
+        <h2 id="work-title" data-i18n="work.title">Experience</h2>
+      </div>
+
+      <div class="section__body">
+        <ul class="project-grid">
+          <li>
+            <a href="https://farmakopeika.ru/" class="project-card" target="_blank" rel="noopener noreferrer">
+              <span class="project-card__index">01</span>
+              <h3 class="project-card__name">Фармакопейка</h3>
+              <p class="project-card__meta" data-i18n="work.farma.meta">2021–2024 · Backend developer</p>
+              <p class="project-card__company" data-i18n="work.farma.company">Medexport–Northern Star LLC</p>
+              <p class="project-card__desc" data-i18n="work.farma.desc">
+                Built and maintained the REST API for a pharmacy chain mobile app.
+                Integrations, search, payments, and internal services — from code to production.
+              </p>
+              <ul class="project-card__highlights">
+                <li data-i18n="work.farma.h1">Full-text search with Elasticsearch + Laravel</li>
+                <li data-i18n="work.farma.h2">CRM and marketing mechanics built from scratch</li>
+                <li data-i18n="work.farma.h3">Payment systems and Yandex Go delivery integration</li>
+                <li data-i18n="work.farma.h4">HR portal, Docker environment, server administration</li>
+              </ul>
+              <span class="project-card__stack">PHP · Laravel · Elasticsearch · Vue 3 · Docker</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.alean.ru/" class="project-card" target="_blank" rel="noopener noreferrer">
+              <span class="project-card__index">02</span>
+              <h3 class="project-card__name">Алеан</h3>
+              <p class="project-card__meta" data-i18n="work.alean.meta">2024–2026 · Lead backend developer</p>
+              <p class="project-card__company" data-i18n="work.alean.company">National tour operator</p>
+              <p class="project-card__desc" data-i18n="work.alean.desc">
+                PHP legacy, master-system integrations, and a mobile app.
+                Designed architecture and extracted bottlenecks into dedicated services.
+              </p>
+              <ul class="project-card__highlights">
+                <li data-i18n="work.alean.h1">Go microservice — async adapter between monolith and SOAP</li>
+                <li data-i18n="work.alean.h2">REST API for mobile app built from scratch</li>
+                <li data-i18n="work.alean.h3">RabbitMQ integration, legacy refactoring</li>
+                <li data-i18n="work.alean.h4">Docker environment improvements, critical local dev fixes</li>
+              </ul>
+              <span class="project-card__stack">PHP · Go · RabbitMQ · Docker</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="pets" class="section shell" aria-labelledby="pets-title">
+      <div class="section__label">
+        <span class="section__num">02</span>
+        <h2 id="pets-title" data-i18n="pets.title">Pet projects</h2>
+      </div>
+
+      <div class="section__body">
+        <p class="section__lead" data-i18n="pets.lead">Systems programming in C++ — to understand how things work under the hood.</p>
+        <ul class="project-grid project-grid--three">
+          <li>
+            <a href="https://github.com/llwizard1024/ascii-poker" class="project-card project-card--pet" target="_blank" rel="noopener noreferrer">
+              <span class="project-card__index">01</span>
+              <h3 class="project-card__name">ascii-poker</h3>
+              <p class="project-card__meta" data-i18n="pets.poker.meta">C++20 · networked multiplayer</p>
+              <p class="project-card__desc" data-i18n="pets.poker.desc">
+                Texas Hold'em in the terminal: authoritative TCP server and FTXUI client with ASCII UI.
+                All game logic on the server — no web stack.
+              </p>
+              <ul class="project-card__highlights">
+                <li data-i18n="pets.poker.h1">Lobby, rooms, side pots, all-in per Hold'em rules</li>
+                <li data-i18n="pets.poker.h2">SQLite accounts, PBKDF2 password hashing</li>
+                <li data-i18n="pets.poker.h3">JSON protocol over TCP, Catch2 tests</li>
+              </ul>
+              <span class="project-card__stack">C++20 · Asio · SQLite · OpenSSL · FTXUI</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/llwizard1024/epoll-chat-server" class="project-card project-card--pet" target="_blank" rel="noopener noreferrer">
+              <span class="project-card__index">02</span>
+              <h3 class="project-card__name">epoll-chat-server</h3>
+              <p class="project-card__meta" data-i18n="pets.chat.meta">C++20 · Linux · sockets</p>
+              <p class="project-card__desc" data-i18n="pets.chat.desc">
+                Async multi-user TCP chat: epoll in edge-triggered mode, single thread, non-blocking I/O.
+              </p>
+              <ul class="project-card__highlights">
+                <li data-i18n="pets.chat.h1">Rooms, private messages, participant list</li>
+                <li data-i18n="pets.chat.h2">Daemonization and file logging via spdlog</li>
+                <li data-i18n="pets.chat.h3">.env configuration, graceful shutdown</li>
+              </ul>
+              <span class="project-card__stack">C++20 · epoll · spdlog · CMake</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/llwizard1024/b3sh" class="project-card project-card--pet" target="_blank" rel="noopener noreferrer">
+              <span class="project-card__index">03</span>
+              <h3 class="project-card__name">b3sh</h3>
+              <p class="project-card__meta" data-i18n="pets.shell.meta">C++20 · POSIX · shell</p>
+              <p class="project-card__desc" data-i18n="pets.shell.desc">
+                Interactive UNIX shell from scratch — to learn syscalls, terminal I/O, and process management.
+              </p>
+              <ul class="project-card__highlights">
+                <li data-i18n="pets.shell.h1">Raw mode, command history, tab completion</li>
+                <li data-i18n="pets.shell.h2">Pipelines, built-in cd / pwd / export</li>
+                <li data-i18n="pets.shell.h3">Ctrl+C and Ctrl+D handling</li>
+              </ul>
+              <span class="project-card__stack">C++20 · POSIX · CMake</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section shell" aria-labelledby="about-title">
+      <div class="section__label">
+        <span class="section__num">03</span>
+        <h2 id="about-title" data-i18n="about.title">About</h2>
+      </div>
+
+      <div class="section__body">
+        <p class="about__text" data-i18n="about.text">
+          Over five years in backend development: e-commerce, pharmaceuticals, tourism.
+          I design APIs, integrate external services, optimize databases, set up Docker environments,
+          and calmly step into legacy — to deliver reliable, understandable solutions.
+          Laravel monolith, Go microservice, queues and search — the right tool for the job, not hype.
+          On the side, I'm into systems programming in C++: sockets, epoll, terminals, processes.
+        </p>
+
+        <div class="stack-block">
+          <p class="stack-block__label" data-i18n="about.stackLabel">Stack</p>
+          <ul class="stack-list" data-i18n-aria="about.stackAria" aria-label="Technologies">
+            <li>PHP</li>
+            <li>Laravel</li>
+            <li>Go</li>
+            <li>C++</li>
+            <li>Elasticsearch</li>
+            <li>RabbitMQ</li>
+            <li>Docker</li>
+            <li>Vue 3</li>
+            <li class="stack-item--learning" data-i18n-title="about.learningTitle" title="Currently learning">
+              <span class="stack-item__dot" aria-hidden="true"></span>
+              Java
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section shell section--last" aria-labelledby="contact-title">
+      <div class="section__label">
+        <span class="section__num">04</span>
+        <h2 id="contact-title" data-i18n="contact.title">Contact</h2>
+      </div>
+
+      <div class="section__body">
+        <ul class="contact-row">
+          <li>
+            <span class="contact-row__label" data-i18n="contact.github">GitHub</span>
+            <a href="https://github.com/llwizard1024" target="_blank" rel="noopener noreferrer">llwizard1024</a>
+          </li>
+          <li>
+            <span class="contact-row__label" data-i18n="contact.email">Email</span>
+            <a href="mailto:lgotindev@gmail.com">lgotindev@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-row__label" data-i18n="contact.telegram">Telegram</span>
+            <a href="https://t.me/llwizard1" target="_blank" rel="noopener noreferrer">@llwizard1</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <p>© <span id="year"></span> <span data-i18n="footer.copyright">Bogdan L'gotin</span></p>
+    <p class="footer__meta">llwizard · html · css · js</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
