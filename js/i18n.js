@@ -16,7 +16,7 @@ const translations = {
     "theme.aria": "Toggle theme",
     "hero.eyebrow": "Backend developer · llwizard",
     "hero.intro":
-      "I don't just write code — I solve problems that make life and work genuinely easier. I love watching an idea become a product and knowing I made the world a little more convenient.",
+      "I don’t just write code — I solve problems that genuinely make life and work easier. I love seeing an idea turn into a product and knowing that I’ve made the world a little more convenient.",
     "hero.cta": "My experience",
     "work.title": "Experience",
     "work.farma.meta": "2021–2024 · Backend developer",
@@ -84,7 +84,7 @@ const translations = {
     "theme.aria": "Переключить тему",
     "hero.eyebrow": "Backend-разработчик · llwizard",
     "hero.intro":
-      "Не просто пишу код — решаю задачи, от которых реально становится проще жить и работать. Люблю видеть, как идея превращается в продукт, и знать, что сделал мир чуть удобнее.",
+      "Я не просто пишу код — я решаю задачи, которые действительно делают жизнь и работу проще. Мне нравится видеть, как идея превращается в продукт, и осознавать, что я сделал мир чуть удобнее.",
     "hero.cta": "Мой опыт",
     "work.title": "Опыт",
     "work.farma.meta": "2021–2024 · Backend-разработчик",
